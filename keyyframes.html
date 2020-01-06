@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+   div {
+width: 100px;
+height: 100px;
+background: chocolate;
+position: relative;
+animation: jyoti;
+animation-duration: 5s;
+animation-iteration-count: 10;
+   }
+
+   @keyframes jyoti {
+       0%
+       {
+           background-color: crimson;
+           transition: ease-in-out;
+           transform:scale(10,15);
+           
+       }
+       25%
+       {
+           background-color:cyan;
+           transition: ease-in-out;
+           transform:translateX(200px);
+       }
+       50%
+       {
+           background-color: rgb(220, 20, 103);
+           transition: ease-in-out;
+           transform:rotate(20deg) scale(15,10);
+       }
+       100%
+       {
+           background-color:darkorchid;
+           transform:skew(50deg) translateY(200px);
+       }
+   }
+   
+   
+   </style>
+</head>
+<body>
+    <div>heading</div>
+</body>
+</html>
