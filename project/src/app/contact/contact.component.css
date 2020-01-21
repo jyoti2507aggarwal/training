@@ -1,0 +1,21 @@
+.square
+{
+    height: 100px;
+    width: 100px;
+    background: lightcoral;
+    transition: 2s all ease-in-out;
+    
+}
+.round
+{
+    height: 100px;
+    width: 100px;
+    background: lightgreen;
+    border-radius: 70px;
+}
+.rectangle
+{
+    height: 100px;
+    width: 150px;
+    background: turquoise;
+}

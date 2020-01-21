@@ -1,0 +1,34 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.head
+{
+    background-color: rgb(162, 162, 233);
+    height: 50px;
+    
+}
+.head1
+{
+    float: right;
+}
+.head1  li
+{
+    display: inline;
+    margin-right: 2px;
+    padding:20px;
+    line-height: 50px;
+}
+.head1 li a 
+{
+   color: black;
+   font-size: 20px;
+   text-decoration: none;
+}
+.head1 li a:hover
+{
+    color: darkviolet;
+    font-size: 30px;
+}

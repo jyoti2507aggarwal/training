@@ -1,0 +1,20 @@
+.square
+{
+    height: 100px;
+    width: 100px;
+    background: red;
+    
+}
+.round
+{
+    height: 100px;
+    width: 100px;
+    background:green;
+    border-radius: 70px;
+}
+.rectangle
+{
+    height: 100px;
+    width: 150px;
+    background: greenyellow;
+}

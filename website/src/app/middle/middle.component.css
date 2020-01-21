@@ -1,0 +1,222 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+.middle
+{
+    background-color: darkgray;
+    height: 550px;
+}
+.middle-left
+{
+    width: 40%;
+    float:left;
+    height: 550px;
+}
+.middle-left img
+{
+    padding-left: 90px;
+    padding-top: 80px;
+}
+.middle-left h1
+{
+    padding-left: 80px;
+    padding-top: 10px;
+}
+.middle-left p
+{
+    padding-left: 80px;
+    padding-top: 35px;
+    word-spacing: 5px;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.middle-right
+{
+    width: 60%;
+    float: right;
+    height: 550px;
+}
+.middle-right h6
+{
+    font-size: 20px;
+    position: relative;
+    top: 60px;
+    padding-left: 90px;
+    display: inline;
+}
+.table-1
+{
+    width: 85%;
+    border: 2px solid black;
+    position: relative;
+    top:80px;
+    left: 80px;
+    height: 50px;
+}
+.one-1
+{
+    width: 12%;
+    height: 50px;
+    padding-left: 40px;
+    
+    border: 2px solid black;
+}
+.one-2
+{
+    width: 65%;
+    height: 50px;
+    border: 2px solid black;
+    padding-left: 30px;
+}
+.one-3
+{
+    width: 11%;
+    height: 50px;
+    border: 2px solid black;
+    padding-left: 10px;
+}
+.table-2
+{
+    width: 85%;
+    border: 2px solid black;
+    position: relative;
+    top:100px;
+    left: 80px;
+    height: 50px;
+}
+.two-1
+{
+    width: 12%;
+    height: 50px;
+    border: 2px solid black;
+    padding-left: 40px;
+}
+.two-2
+{
+    width: 65%;
+    height: 50px;
+    border: 2px solid black;
+    padding-left: 30px;
+}
+.two-3
+{
+    width: 11%;
+    height: 50px;
+    border: 2px solid black;
+    padding-left: 10px;
+}
+.table-3
+{
+    width: 85%;
+    border: 2px solid black;
+    position: relative;
+    top:120px;
+    left: 80px;
+    height: 50px;
+}
+.three-1
+{
+    width: 12%;
+    height: 50px;
+    border: 2px solid black;
+    padding-left: 40px;
+}
+.three-2
+{
+    width: 65%;
+    height: 50px;
+    border: 2px solid black;
+    padding-left: 30px;
+}
+.three-3
+{
+    width: 11%;
+    height: 50px;
+    border: 2px solid black;
+    padding-left: 10px;
+}
+.table-4
+{
+    width: 85%;
+    border: 2px solid black;
+    position: relative;
+    top:140px;
+    left: 80px;
+    height: 50px;
+}
+.four-1
+{
+    width: 12%;
+    height: 50px;
+    border: 2px solid black;
+    padding-left: 40px;
+}
+.four-2
+{
+    width: 65%;
+    height: 50px;
+    border: 2px solid black;
+    padding-left: 30px;
+}
+.four-3
+{
+    width: 11%;
+    height: 50px;
+    border: 2px solid black;
+    padding-left: 10px;
+}
+.table-5
+{
+    width: 85%;
+    border: 2px solid black;
+    position: relative;
+    top:160px;
+    left: 80px;
+    height: 50px;
+}
+.five-1
+{
+    width: 12%;
+    height: 50px;
+    border: 2px solid black;
+    padding-left: 40px;
+}
+.five-2
+{
+    width: 65%;
+    height: 50px;
+    border: 2px solid black;
+    padding-left: 30px;
+}
+.five-3
+{
+    width: 11%;
+    height: 50px;
+    border: 2px solid black;
+    padding-left: 10px;
+}
+.set
+{
+    float: right;
+    height: 50px;
+    background-color: darkslategrey;
+}
+.middle-right p
+{
+    position: relative; 
+    top: 200px;
+    left: 100px;
+}    
+button
+{
+    float: right;
+    position: relative; 
+    top: 170px;
+    right: 41px;
+    font-size:large;
+    height: 40px;
+    width: 100px;
+    background-color: darkslategray;
+}
