@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { InternnexusreportComponent } from './internnexusreport/internnexusreport.component';
+import { RegisterpageComponent } from './registerpage/registerpage.component';
+import { ClientComponent } from './client/client.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    InternnexusreportComponent
+    InternnexusreportComponent,
+    RegisterpageComponent,
+    ClientComponent
   ],
   imports: [
     BrowserModule,
