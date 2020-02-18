@@ -1,0 +1,148 @@
+<app-adminsidebar></app-adminsidebar>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 mt-2">
+      <h2 style="text-align: center;">Add Product </h2>
+
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <label for="Name"><b>Name</b></label>
+            <input type="text" class="form-control" name='name' [(ngModel)]='name' />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="Name"><b>Products Details</b></label>
+            <input type="text" class="form-control" name='productDetails' [(ngModel)]='productDetails' />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="Discription"><b>Additional Details</b></label>
+            <input type="text" class="form-control" name='additionalDetails' [(ngModel)]='additionalDetails' />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-3">
+            <label for="metaTagName"><b>List Price</b></label>
+            <input type="number" class="form-control" name='listPrice' [(ngModel)]='listPrice' />
+          </div>
+          <div class="form-group col-md-3">
+            <label for="metaTagName"><b>Minimum Order Price</b></label>
+            <input type="number" class="form-control" name='minimumOrderPrice' [(ngModel)]='minimumOrderPrice' />
+          </div>
+          <div class="form-group col-md-3">
+            <label for="metaTagName"><b>Handling Fee</b></label>
+            <input type="number" class="form-control" name='handlingFee' [(ngModel)]='handlingFee' />
+          </div>
+          <div class="form-group col-md-3">
+            <label for="metaTagName"><b>Shipping Fee</b></label>
+            <input type="number" class="form-control" name='shippingFee' [(ngModel)]='shippingFee' />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="metaTagName"><b>URL</b></label>
+            <input type="text" class="form-control" name='url' [(ngModel)]='url' />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="Discription"><b>SKU</b></label>
+            <input type="text" class="form-control" name='SKU' [(ngModel)]='SKU' />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-3">
+            <label for="metaTagName"><b>Featured</b></label> &nbsp;&nbsp;
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="featuredyes" name="featured" class="custom-control-input" value=true
+                name='featured' [(ngModel)]='featured'>
+              <label class="custom-control-label" for="featuredyes">Yes</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="featuredno" name="featured" class="custom-control-input" value=false
+                name='featured' [(ngModel)]='featured'>
+              <label class="custom-control-label" for="featuredno">No</label>
+            </div>
+
+
+          </div>
+          <div class="form-group col-md-3">
+            <label for="metaTagName"><b>Free Shipping</b></label>&nbsp;&nbsp;
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="freeshippingyes" name="freeshipping" class="custom-control-input" value=true
+                name='freeShipping' [(ngModel)]='freeShipping'>
+              <label class="custom-control-label" for="freeshippingyes">Yes</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="freeshippingno" name="freeshipping" class="custom-control-input" value=false
+                name='freeShipping' [(ngModel)]='fr'>
+              <label class="custom-control-label" for="freeshippingno">No</label>
+            </div>
+          </div>
+          <div class="form-group col-md-3">
+            <label for="metaTagName"><b>Review Allowed</b></label>&nbsp;&nbsp;
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="reviewyes" name="review" class="custom-control-input" value=true
+                name='reviewAllowed' [(ngModel)]='reviewAllowed'>
+              <label class="custom-control-label" for="reviewyes">Yes</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">&nbsp;&nbsp;
+              <input type="radio" id="reviewno" name="review" class="custom-control-input" value=false
+                name='reviewAllowed' [(ngModel)]='reviewAllowed'>
+              <label class="custom-control-label" for="reviewno">No</label>
+            </div>
+          </div>
+          <div class="form-group col-md-3">
+            <label for="metaTagName"><b>Need Changes </b></label>&nbsp;
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input"
+                value=true name='needChanges' [(ngModel)]='needChanges'>
+              <label class="custom-control-label" for="customRadioInline1">Yes</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">&nbsp;&nbsp;
+              <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input"
+                value=false name='needChanges' [(ngModel)]='needChanges'>
+              <label class="custom-control-label" for="customRadioInline2">No</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <label for="Name"><b>Category</b></label>
+            <div>
+              <form>
+                <div class="form-group" *ngFor="let category of setCategoryArr;index as i">
+                  <label>{{category.name}}</label>
+                  <button type="button" class="btn btn-danger" (click)="deleteCategory(i)">&times;</button>
+                </div>
+                <div class="form-group">
+                  <select class="custom-select" name='category' [(ngModel)]='category'>
+                    <option value="">Choose A category</option>
+                    <option *ngFor="let obj of categoryArr">{{obj.name}}</option>
+                  </select>
+                  <button type="button" (click)="addCategory(category)">Select</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+
+          <label for=""><b>Product Content Blog</b></label>
+
+          <angular-editor name="blog" [placeholder]="'Enter text here...'" [(ngModel)]="blog" [config]="editorConfig">
+          </angular-editor>
+        </div>
+        <div class="form-row mt-4">
+          <div class="form-group col-md-12 btn2">
+            <button type="button" class="btn btn-success" (click)="createProduct()">Submit</button>
+          </div>
+
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>

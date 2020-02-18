@@ -1,0 +1,28 @@
+<app-adminsidebar></app-adminsidebar>
+<div class="container">
+    <div class="row" style="background-color: #F6F6F6;">
+      <div class="col-lg-12 col-md-12">
+        <h2 style="text-align: center;">View Discount Codes</h2>
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Valid Till</th>
+                <th>View Details</th>
+                <th>Update</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let obj of discountCodeArr">
+                <td>{{obj.name}}</td>
+                <td>{{obj.validTill | date :short}}</td>
+                <td><button class="btn btn-primary" routerLink="/admin/discountcode/viewdetails/{{obj._id}}">View Details</button></td>
+                <td><button class="btn btn-danger" routerLink="/admin/discountcode/update">Update</button></td>
+                <td><button class="btn btn-info">Delete</button></td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
+  </div>
